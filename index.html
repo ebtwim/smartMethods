@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Robot Control</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+		.container {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			height: 80vh;
+		}
+		button {
+			font-size: 24px;
+			padding: 20px;
+			margin: 20px;
+			border-radius: 50%;
+			border: none;
+			background-color: #4CAF50;
+			color: white;
+			cursor: pointer;
+			transition: background-color 0.3s ease-in-out;
+			box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+		}
+		button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<h1>Robot Control</h1>
+	<div class="container">
+		<form action="procces.php" method="post">
+      <button class="movement" name="move" value ="forward" id="forward">Forward</button>
+		<button class="movement" name="move" value ="back"id="Backward" >Backward</button>
+        <button class="movement" name="move" value ="stop" id="stop">Stop</button>
+		<button class="movement" name="move" value ="right" id="right">Right</button>
+		<button class="movement" name="move" value ="left " id="left">Left</button>
+
+      
+    </form>
+		
+	</div>
+	
+</body>
+</html>
